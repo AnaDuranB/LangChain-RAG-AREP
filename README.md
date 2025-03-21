@@ -21,6 +21,21 @@ El proyecto utiliza varias bibliotecas de Python que deben instalarse antes de e
 !pip install bs4
 ```
 
+## **Estructura del Proyecto**
+
+El proyecto tiene la siguiente estructura de archivos:
+
+```
+LangChain-RAG-AREP/
+├── README.md
+├── src/
+│   └── rag-project.ipynb
+```
+
+- **`README.md`**: Este archivo, con la documentación del proyecto.
+- **`rag-project.ipynb`**: Código principal del proyecto.
+
+---
 ## Configuración del Entorno
 
 ### Configuración de OpenAI
