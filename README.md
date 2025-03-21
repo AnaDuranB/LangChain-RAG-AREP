@@ -2,12 +2,35 @@
 
 Este proyecto implementa un sistema de Retrieval Augmented Generation (RAG) utilizando LangChain y Pinecone en Google Colab. El objetivo es crear una aplicación que pueda responder preguntas basadas en el contenido de un sitio web, utilizando un modelo de lenguaje (LLM) para generar respuestas y un almacén de vectores para recuperar información relevante.
 
-## Requisitos Previos
+## **Descripción del Proyecto**
 
-Antes de ejecutar el proyecto, asegúrate de tener las siguientes dependencias instaladas:
+Este proyecto implementa un sistema RAG que:
 
-- **Google Colab**: El proyecto está diseñado para ejecutarse en Google Colab.
-- **API Keys**: Necesitarás claves API para OpenAI y Pinecone.
+1. **Indexa documentos**: Carga, divide y almacena documentos en una base de datos vectorial (Pinecone).
+2. **Recupera información relevante**: Dada una pregunta, recupera los fragmentos de texto más relevantes.
+3. **Genera respuestas**: Usa un modelo de lenguaje (GPT-4) para generar respuestas basadas en la información recuperada.
+
+---
+
+## **Arquitectura y Componentes**
+
+El proyecto está compuesto por los siguientes componentes principales:
+
+1. **LangChain**: Framework para construir aplicaciones con modelos de lenguaje.
+2. **OpenAI**: Proveedor del modelo de lenguaje (GPT-4) y embeddings.
+3. **Pinecone**: Base de datos vectorial para almacenar y recuperar embeddings de documentos.
+4. **BeautifulSoup4**: Biblioteca para analizar y extraer contenido de páginas web.
+5. **LangGraph**: Framework para construir aplicaciones con flujos de trabajo complejos.
+
+---
+
+## **Requisitos**
+
+- Python 3.8+
+- Cuenta en [OpenAI](https://platform.openai.com/) para obtener una clave API.
+- Cuenta en [Pinecone](https://www.pinecone.io/) para usar la base de datos vectorial.
+  
+---
 
 ## Instalación de Dependencias
 
@@ -193,12 +216,16 @@ print(response["answer"])
 
 ![image](https://github.com/user-attachments/assets/b2f78784-46f3-43a5-a399-b6d594c636ee)
 
-
 ## Visualización del Grafo
 
 Puedes visualizar el grafo de la aplicación utilizando la siguiente función:
 
 ![image](https://github.com/user-attachments/assets/03c3f940-d82d-448f-a685-2a5ad092e8f7)
+
+### **Notas Adicionales**
+
+- Si no tienes una clave de API de OpenAI o Pinecone, asegúrate de configurarlas en el entorno como se explicó anteriormente.
+- Si encuentras algún problema durante la instalación, verifica que estás usando una sesión activa de Google Colab y que tienes acceso a Internet.
 
 ### **Autor**
 
