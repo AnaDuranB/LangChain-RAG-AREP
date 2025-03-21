@@ -1,4 +1,4 @@
-# RAG Project with LangChain and Pinecone
+# RAG Project with OpenAI, and Pinecone
 
 Este proyecto implementa un sistema de Retrieval Augmented Generation (RAG) utilizando LangChain y Pinecone en Google Colab. El objetivo es crear una aplicación que pueda responder preguntas basadas en el contenido de un sitio web, utilizando un modelo de lenguaje (LLM) para generar respuestas y un almacén de vectores para recuperar información relevante.
 
